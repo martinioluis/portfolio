@@ -1,0 +1,38 @@
+.Portfolio {
+    $yellow: #F2D64B;
+    position: relative;
+    background-image: linear-gradient(to bottom, #110da1, #430fb6, #670fcb, #890ddf, #ab05f2);
+    width: 100vw;
+    height: 100vh;
+    color: $yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Portrait */
+    @media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: portrait) {
+        .title {
+            font-size: 40px;
+        }
+        .droitDeconnexion img {
+            width: 300px;
+        }
+        .retrocade img {
+            width: 300px;
+        }
+        .arrowUp {
+            position: absolute;
+            top: 10vh;
+            opacity: 0;
+        }
+        .arrowDown {
+            position: absolute;
+            bottom: 10vh;
+            opacity: 0;
+        }
+    }
+}
