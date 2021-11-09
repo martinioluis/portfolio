@@ -5,6 +5,7 @@ import Profil from './Pofil';
 import { useSelector } from 'react-redux';
 import './App.scss';
 import { Portfolio } from './Portfolio';
+import { Navbar } from './navbar-footer/Navbar';
 
 function App() {
   const clicked = useSelector(state => state.clicked.clicked);
@@ -15,7 +16,7 @@ function App() {
         ? <Intro />
         : !portfolio
           ? <Profil />
-          : <Portfolio />
+          : <div><Navbar /><Portfolio /></div>
       }
     </div>
   );

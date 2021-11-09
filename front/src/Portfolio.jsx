@@ -5,7 +5,6 @@ import { faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { useDispatch, useSelector } from 'react-redux';
 import './Portfolio.scss'
 import { arrowTimeAction } from './actions/arrowTime';
-import Snake from './Snake';
 
 export const Portfolio = () => {
     const dispatch = useDispatch();
@@ -41,27 +40,37 @@ export const Portfolio = () => {
         });
     });
 
+    const projects = [
+        {
+            id: 1,
+            className: 'droitDeconnexion',
+            href: '#',
+            src: 'https://res.cloudinary.com/dsxb2uyct/image/upload/v1572988106/droit_a_la_deconnexion_adifre.png',
+            alt: 'Droit à la Déconnexion',
+        },
+        {
+            id: 2,
+            className: 'retrocade',
+            href: '#',
+            src: 'https://res.cloudinary.com/dsxb2uyct/image/upload/v1572988110/retrocade_rdqbxk.png',
+            alt: 'Retrocade',
+        }
+    ]
+
     return (
         <div>
             {arrowTime
                 ? <div className="Portfolio">
-                        <Snake className="snake" />
                     <div className="arrowUp">
                         <FontAwesomeIcon icon={faArrowUp} size="2x"/>
                     </div>
-                    <div className="scrapy">
-                            
-                    </div>
-                    <div className="droitDeconnexion">
-                        <a href="#">
-                            <img src="https://res.cloudinary.com/dsxb2uyct/image/upload/v1572988106/droit_a_la_deconnexion_adifre.png" alt="Droit à la Déconnexion"/>
-                        </a>
-                    </div>
-                    <div className="retrocade">
-                        <a href="#">
-                            <img src="https://res.cloudinary.com/dsxb2uyct/image/upload/v1572988110/retrocade_rdqbxk.png" alt="Retrocade"/>
-                        </a>
-                    </div>
+                    {projects.map(project => 
+                        <div className={project.className}>
+                            <a href={project.href}>
+                                <img src={project.src} alt={project.alt}/>
+                            </a>
+                        </div>
+                    )}
                     <div className="arrowDown">
                         <FontAwesomeIcon icon={faArrowDown} size="2x"/>
                     </div>
