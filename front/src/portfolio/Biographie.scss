@@ -1,0 +1,14 @@
+.Biographie {    
+    $yellow: #F2D64B;
+    position: absolute;
+    background-image: linear-gradient(to bottom, #110da1, #430fb6, #670fcb, #890ddf, #ab05f2);
+    width: 100vw;
+    height: 100vh;
+    color: $yellow;
+    .content {
+        padding: 3vh;
+        p {
+            text-align: justify;
+        }
+    }
+}

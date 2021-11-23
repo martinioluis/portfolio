@@ -120,12 +120,12 @@ const Profil = () => {
             </div>
             <div className="words">
                 <p>
-                    <span className="word1">Autonomous, </span>
-                    <span className="word2">Persistent, </span>
-                    <span className="word3">Curious, </span>
-                    <span className="word4">Learn</span>
+                    <span className="word1">Autonome, </span>
+                    <span className="word2">Persistant, </span>
+                    <span className="word3">Curieux, </span>
+                    <span className="word4">Apprendre</span>
                     <br/>
-                    <span className="word5">are my keys words.</span>
+                    <span className="word5">sont mes maître mots.</span>
                 </p>
             </div>
             <iframe src="https://giphy.com/embed/26tn33aiTi1jkl6H6" frameBorder="0" className="giphy-embed" allowFullScreen title="code"></iframe><p><a href="https://giphy.com/gifs/screen-monitor-closeup-26tn33aiTi1jkl6H6"></a></p>

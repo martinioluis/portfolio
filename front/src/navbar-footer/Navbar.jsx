@@ -1,24 +1,9 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import anime from 'animejs';
 import './Navbar.scss';
 
 export const Navbar = () => {
-
-    const items = [
-        {
-            id: 1,
-            title: 'Biographie',
-        }
-        ,
-        {
-            id: 2,
-            title: 'Formation',
-        },
-        {
-            id: 3,
-            title: 'Projets',
-        }
-    ]
 
     useEffect(() => {
         anime.timeline({loop: false, direction: 'linear'})
@@ -33,7 +18,9 @@ export const Navbar = () => {
 
     return (
         <div className="Navbar">
-            {items.map(item => <div className="item">{item.title}</div>)}
+            <Link to="/biographie">Biographie</Link>
+            <Link to="/formation">Formation</Link>
+            <Link to="/projets">Projets</Link>
         </div>
     )
 }

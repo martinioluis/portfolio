@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react';
+import React,  { useEffect } from 'react';
 import anime from 'animejs';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { useDispatch, useSelector } from 'react-redux';
-import './Portfolio.scss';
-import { arrowTimeAction } from './actions/arrowTime';
+import { arrowTimeAction } from '../actions/arrowTime';
+import './Projets.scss'
 
-export const Portfolio = () => {
+export const Projets = () => {
     const dispatch = useDispatch();
     const arrowTimeFunction = () => dispatch(arrowTimeAction());
     const arrowTime = useSelector(state => state.arrowTime.arrowTime);
@@ -58,29 +58,27 @@ export const Portfolio = () => {
     ]
 
     return (
-        <div className="Portfolio">
-            {/* { !biographie
-                        ? <Biographie />
-                        :  arrowTime
+        <div className="Projets">
+            {arrowTime 
                 ? <div className="Projets">
-                    <div className="arrowUp">
-                        <FontAwesomeIcon icon={faArrowUp} size="2x"/>
-                    </div>
-                    {projects.map(project => 
-                        <div className={project.className}>
-                            <a href={project.href}>
-                                <img src={project.src} alt={project.alt}/>
-                            </a>
+                        <div className="arrowUp">
+                            <FontAwesomeIcon icon={faArrowUp} size="2x"/>
                         </div>
-                    )}
-                    <div className="arrowDown">
-                        <FontAwesomeIcon icon={faArrowDown} size="2x"/>
+                        {projects.map(project => 
+                            <div className={project.className}>
+                                <a href={project.href}>
+                                    <img src={project.src} alt={project.alt}/>
+                                </a>
+                            </div>
+                        )}
+                        <div className="arrowDown">
+                            <FontAwesomeIcon icon={faArrowDown} size="2x"/>
+                        </div>
                     </div>
-                  </div>
                 :   <div className="Projets">
                         <h1 className="title">Mes Projets</h1>
-                    </div> 
-            } */}
+                    </div>
+            }
         </div>
     )
-};
+}
