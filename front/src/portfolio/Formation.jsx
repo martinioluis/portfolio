@@ -6,9 +6,9 @@ export const Formation = () => {
         <div className="Formation">
             <div className="content">
                 <div className="leWagon">
-                    <p>
+                    <h2>
                         Je me suis formé en 2017 à <div className="bold">Le Wagon</div> Lyon:
-                    </p>
+                    </h2>
 
                     <p>
                         Durant 9 semaines intensives, j’ai pu apprendre différent concept:
@@ -38,8 +38,10 @@ export const Formation = () => {
                 </div>
 
                 <div className="WildCodeSchool">
-                    <p>
+                    <h2>
                         J'ai egalement fait la <div className="bold">Wild Code School</div> à Bordeaux.
+                    </h2>
+                    <p>
                         Durant cette formation, j’ai pu apprendre différent concepts concernant:
                     </p>
                     <p>

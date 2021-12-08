@@ -1,4 +1,4 @@
-.Projets {
+.Projects {
     $yellow: #F2D64B;
     position: relative;
     background-image: linear-gradient(to bottom, #110da1, #430fb6, #670fcb, #890ddf, #ab05f2);
@@ -33,6 +33,14 @@
             position: absolute;
             bottom: 14vh;
             opacity: 0;
+        }
+        h2 {
+            text-align: center;
+        }
+        .active.carousel-item {
+            img {
+                opacity: 0.6;
+            }
         }
     }
 }

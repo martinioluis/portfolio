@@ -1,0 +1,26 @@
+.Retrocade {
+    $yellow: #F2D64B;
+    color: $yellow;
+    background-image: linear-gradient(to bottom, #110da1, #430fb6, #670fcb, #890ddf, #ab05f2);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh 3vh;
+    p {
+        text-align: justify;
+        .bold {
+            font-weight: bold;
+        }
+    }
+    img {
+        width: 300px;
+        padding-bottom: 1vh;
+    }
+    a {
+        color: $yellow;
+        text-decoration: none;
+    }
+}

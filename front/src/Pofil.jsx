@@ -121,7 +121,7 @@ const Profil = () => {
             <div className="words">
                 <p>
                     <span className="word1">Autonome, </span>
-                    <span className="word2">Persistant, </span>
+                    <span className="word2">Perseverant, </span>
                     <span className="word3">Curieux, </span>
                     <span className="word4">Apprendre</span>
                     <br/>

@@ -1,9 +1,10 @@
 import React,  { useEffect } from 'react';
 import anime from 'animejs';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { useDispatch, useSelector } from 'react-redux';
 import { arrowTimeAction } from '../actions/arrowTime';
+import { Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Carousel } from 'react-bootstrap';
 import './Projets.scss'
 
 export const Projets = () => {
@@ -58,27 +59,48 @@ export const Projets = () => {
     ]
 
     return (
-        <div className="Projets">
-            {arrowTime 
-                ? <div className="Projets">
-                        <div className="arrowUp">
-                            <FontAwesomeIcon icon={faArrowUp} size="2x"/>
-                        </div>
-                        {projects.map(project => 
-                            <div className={project.className}>
-                                <a href={project.href}>
-                                    <img src={project.src} alt={project.alt}/>
-                                </a>
-                            </div>
-                        )}
-                        <div className="arrowDown">
-                            <FontAwesomeIcon icon={faArrowDown} size="2x"/>
-                        </div>
-                    </div>
-                :   <div className="Projets">
-                        <h1 className="title">Mes Projets</h1>
-                    </div>
-            }
+        <div className="Projects">
+            <h2>Mes projets:</h2>
+            <Carousel>
+                <Carousel.Item>
+                    <Link to="/DroitALaDeconnexion">
+                    <img
+                    className="d-block w-100"
+                    src="https://res.cloudinary.com/dsxb2uyct/image/upload/v1572988106/droit_a_la_deconnexion_adifre.png"
+                    alt="First slide"
+                    />
+                    <Carousel.Caption>
+                    <h3>Droit à la Déconnexion</h3>
+                    </Carousel.Caption>
+                    </Link>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <Link to="/Retrocade">
+                        <img
+                        className="d-block w-100"
+                        src="https://res.cloudinary.com/dsxb2uyct/image/upload/v1572988110/retrocade_rdqbxk.png"
+                        alt="Second slide"
+                        />
+
+                        <Carousel.Caption>
+                        <h3>Retrocade</h3>
+                        </Carousel.Caption>
+                    </Link>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <Link to="/RoadAccidentFrance">
+                    <img
+                    className="d-block w-100"
+                    src="https://res.cloudinary.com/dsxb2uyct/image/upload/v1587395715/Screen_Shot_2020-04-20_at_17.13.17_jkzwkj.png"
+                    alt="Third slide"
+                    />
+
+                    <Carousel.Caption>
+                    <h3>Road Accident France</h3>
+                    </Carousel.Caption>
+                    </Link>
+                </Carousel.Item>
+            </Carousel>
         </div>
     )
 }
