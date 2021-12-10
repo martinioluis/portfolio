@@ -12,4 +12,10 @@
             font-weight: bold;
         }
     }
+    @media  screen and (min-width: 1024px) {
+        .content {
+            padding: 10vh;
+            font-size: 22px;
+        }
+    }
 }

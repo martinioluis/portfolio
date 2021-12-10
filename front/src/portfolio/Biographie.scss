@@ -17,4 +17,10 @@
     img {
         width: 200px;
     }
+    @media  screen and (min-width: 1024px) {
+        .content {
+            padding: 10vh;
+            font-size: 22px;
+        }
+    }
 }

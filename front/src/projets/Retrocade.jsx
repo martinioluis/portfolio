@@ -11,9 +11,9 @@ export const Retrocade = () => {
                 alt="Second slide"
             />
 
-            <p>Ce fût le second projet à la Wild Code school.</p>
-            <p>Nous étions 4 développeurs à s'occuper du projet.</p>
-            <p>L'objectif de cette application était de réaliser a faire de la pub sur un jeu vidéo.</p>
+            <p>Ce fut le second projet à la Wild Code school.</p>
+            <p>Nous étions 4 développeurs à nous occuper du projet.</p>
+            <p>L'objectif de cette application était de concevoir une pub pour un jeu vidéo.</p>
         </div>
     )
 }

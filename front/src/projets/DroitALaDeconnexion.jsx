@@ -17,11 +17,11 @@ export const DroitALaDeconnexion = () => {
                 L’implication des entreprises sera donc évaluée par les salariés eux-mêmes, le classement est ainsi dynamique (mise en valeur du top 10) et évolue au fil des avis utilisateurs.
             </p>
 
-            <p>Ce fût le projet le plus conséquent durant ma fomration à la Wild Code School</p>
-            <p>Il consistait à créer une application pour un client entrepreneur</p>
-            <p>Durant ce projet, nous étions 6 développeurs</p>
-            <p>Nous travaillions avec le méthode agile et scrum. A tour de rôle, nous echangions le rôle de scrum master</p>
-            <p>Les technologies utilisées était <span className="bold">React</span> et <span className="bold">Nodejs</span></p>
+            <p>Ce fut le projet le plus conséquent durant ma fomration à la Wild Code School.</p>
+            <p>Il consistait à créer une application pour un client entrepreneur.</p>
+            <p>Durant ce projet, nous étions 6 développeurs.</p>
+            <p>Nous travaillions avec la méthode agile et scrum. A tour de rôle, nous échangions le rôle de scrum master et de producter owner.</p>
+            <p>Les technologies utilisées étaient <span className="bold">React</span> et <span className="bold">Nodejs</span>.</p>
             <a href="https://github.com/WildCodeSchool/bordeaux-0219-js-calldoor">github</a>
         </div>
     )
